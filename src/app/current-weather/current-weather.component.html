@@ -1,0 +1,52 @@
+<div class="background">
+<div class="circle-shape circle-1"></div>
+<h3 class="app">Weather app</h3>
+<!-- <div class="container">  -->
+    <div class="container"> 
+    <div class="input-box">
+        <i class="uil uil-map-marker"></i>
+        <input [(ngModel)]="data" type="text" placeholder="Search Location" >
+        <button type="button" (click)="submit()">
+            <i class="uil uil-search"></i>
+        </button>
+    </div>
+   
+    
+    <div class="weather__details">
+        <div class="weather__location">
+            <h1>{{weatherDetails.name}}</h1>
+        </div>
+        <div class="weather__condition">
+            <h2>{{weatherDetails.weather[0].description}}</h2>
+        </div>
+        <div class="weather__img">  
+
+            <!-- 04n -->
+            <!-- <i class="uil uil-cloud-sun"></i> -->
+            
+            <img src="http://openweathermap.org/img/wn/{{weatherDetails.weather[0].icon}}@2x.png" >
+        </div>
+        <div class="weather__temp">
+            <h1> {{weatherDetails.main.temp}}&#176;C</h1>
+        </div>
+        <div class="weather__humidity-wind">
+            <div class="weather__humidity">
+                <div class="wind-des">
+
+                    <i class="uil uil-wind"></i>                </div>
+                <div class="wind-num">{{weatherDetails.wind.speed}}km/h &nbsp;&nbsp; </div>
+            </div>
+            
+            <div class="weather__wind">
+                <div class="humidity-des">
+                    <i class="uil uil-temperature-minus"></i>
+                    <!-- <img src="/assets/humidity.png" width="40px" height="40px" alt=""> -->
+                </div>
+
+                <div class="humidity-num"> {{weatherDetails.main.humidity}}&#176;C</div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="circle-shape circle-2"></div>
+</div>n

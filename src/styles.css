@@ -1,1 +1,16 @@
 /* You can add global styles to this file, and also import other style files */
+html{
+    font-size: 10px;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100%;
+    background-color:rgb(26, 163, 255,0.9);
+    /* background-image:url('https://www.google.com/url?sa=i&url=https%3A%2F%2Funsplash.com%2Fs%2Fphotos%2Fweather-app&psig=AOvVaw1m3NxFWcPlXp5v_zPjweJ-&ust=1678730464589000&source=images&cd=vfe&ved=0CBAQjRxqFwoTCPib2uP81v0CFQAAAAAdAAAAABAE'); */
+   background-image: url('https://res.cloudinary.com/practicaldev/image/fetch/s--vqF9LVka--/c_imagga_scale,f_auto,fl_progressive,h_900,q_auto,w_1600/https://images.unsplash.com/photo-1545193544-312983719627%3Fixlib%3Drb-1.2.1%26ixid%3DeyJhcHBfaWQiOjEyMDd9%26auto%3Dformat%26fit%3Dcrop%26w%3D1650%26q%3D80');
+  
+}
